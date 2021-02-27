@@ -264,7 +264,7 @@ glm::mat4 computeHomeView() {
   }
 
   // Rotate around the up axis, since our camera looks down -Z
-  R = glm::rotate(R, static_cast<float>(PI), baseUp);
+  // R = glm::rotate(R, static_cast<float>(PI), baseUp);
 
   glm::mat4x4 Tobj = glm::translate(glm::mat4x4(1.0), -state::center);
   glm::mat4x4 Tcam =
